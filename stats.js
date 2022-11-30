@@ -119,7 +119,7 @@ function create() {
   </div>
   <div class="d-grid play bg-dark-gray"id="play"></div>
   </div>`
-                if ( json.attempts_on_goal == null ){
+                if ( json.attempts_on_goal === null ){
  var table = document.createElement('table')
     table.setAttribute('class', 'div-child-box bg-dark-gray py-2 position-relative')
     table.innerHTML = `<tbody><tr>  <td>${team1.goals}</td>  <td>Goals</td>  <td>${team2.goals}</td></tr></thead>`
