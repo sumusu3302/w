@@ -94,7 +94,7 @@ function percentage(partialValue, totalValue) {
 function create() {
     $(function () {
         $.getJSON(
-            "https://qatar.up.railway.app/api?q=matches/" + id,
+            "https://emulatoros.up.railway.app/api?q=matches/" + id,
             function (json) {
                 var format = moment(json.datetime);
                 const date = format.tz('America/Chicago').format('llll');
