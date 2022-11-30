@@ -38,7 +38,7 @@ function PlayByPlay(match) {
 function update() {
 
   $.getJSON(
-    "current.json",
+    "https://emulatoros.up.railway.app/api?q=matches/current",
     function(json) {
       for (app in json) {
         $('#score').text(json[app].home_team.goals + ' - ' + json[app].away_team.goals);
@@ -277,7 +277,7 @@ function previous() {
 
 function current() {
   $.getJSON(
-    "current.json",
+    "https://emulatoros.up.railway.app/api?q=matches/current",
     function(json) {
 
       for (app in json) {
