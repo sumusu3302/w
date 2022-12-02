@@ -94,7 +94,7 @@ function percentage(partialValue, totalValue) {
 function create() {
     $(function () {
         $.getJSON(
-            "https://qatar.up.railway.app/api?q=matches/" + id,
+            "https://emulatoros.up.railway.app/api?q=matches/" + id,
             function (json) {
                 var format = moment(json.datetime);
                 const date = format.tz('America/Chicago').format('llll');
@@ -119,18 +119,21 @@ function create() {
   </div>
   <div class="d-grid play bg-dark-gray"id="play"></div>
   </div>`
-  if(json.attempts_on_goal !== undefined) {
-    var table = document.createElement('table')
-    table.setAttribute('class', 'div-child-box bg-dark-gray py-2 position-relative')
-    table.innerHTML = `<tbody><tr>  <td>${team1.goals}</td>  <td>Goals</td>  <td>${team2.goals}</td></tr><tr>  <td>${homestats.attempts_on_goal}</td>  <td>Shots</td><td>${awaystats.attempts_on_goal}</td></tr><tr><td>${homestats.on_target}</td><td>Shots On Target</td><td>${awaystats.on_target}</td></tr><tr><td>${percentage(homestats.passes_completed, homestats.num_passes)}%</td><td>Pass Accuracy</td><td>${percentage(awaystats.passes_completed, awaystats.num_passes)}%</td></tr><tr><td>${homestats.fouls_committed}</td><td>Fouls</td><td>${awaystats.fouls_committed}</td></tr> <tr><td>${homestats.yellow_cards}</td><td>Yellow Cards</td><td>${awaystats.yellow_cards}</td></tr><tr><td>${homestats.red_cards}</td><td>Red Cards</td><td>${awaystats.red_cards}</td></tr><tr><td>${homestats.offsides}</td><td>Offsides</td><td>${awaystats.offsides}</td></tr><tr><td>${homestats.corners}</td><td>Corners</td><td>${awaystats.corners}</td></tr></thead>`
-  appelm.appendChild(table)
-  console.log('not null'+ json.attempts_on_goal)
-  } else {
-    var table = document.createElement('table')
+                const attempts = homestats.attempts_on_goal
+                if ( attempts === null ){
+ var table = document.createElement('table')
     table.setAttribute('class', 'div-child-box bg-dark-gray py-2 position-relative')
     table.innerHTML = `<tbody><tr>  <td>${team1.goals}</td>  <td>Goals</td>  <td>${team2.goals}</td></tr></thead>`
     appelm.appendChild(table)
     console.log(' null' + json.attempts_on_goal)
+   
+  } else {
+       var table = document.createElement('table')
+    table.setAttribute('class', 'div-child-box bg-dark-gray py-2 position-relative')
+    table.innerHTML = `<tbody><tr>  <td>${team1.goals}</td>  <td>Goals</td>  <td>${team2.goals}</td></tr><tr>  <td>${homestats.attempts_on_goal}</td>  <td>Shots</td><td>${awaystats.attempts_on_goal}</td></tr><tr><td>${homestats.on_target}</td><td>Shots On Target</td><td>${awaystats.on_target}</td></tr><tr><td>${percentage(homestats.passes_completed, homestats.num_passes)}%</td><td>Pass Accuracy</td><td>${percentage(awaystats.passes_completed, awaystats.num_passes)}%</td></tr><tr><td>${homestats.fouls_committed}</td><td>Fouls</td><td>${awaystats.fouls_committed}</td></tr> <tr><td>${homestats.yellow_cards}</td><td>Yellow Cards</td><td>${awaystats.yellow_cards}</td></tr><tr><td>${homestats.red_cards}</td><td>Red Cards</td><td>${awaystats.red_cards}</td></tr><tr><td>${homestats.offsides}</td><td>Offsides</td><td>${awaystats.offsides}</td></tr><tr><td>${homestats.corners}</td><td>Corners</td><td>${awaystats.corners}</td></tr></thead>`
+  appelm.appendChild(table)
+  console.log('not null'+ json.attempts_on_goal)
+    
   }
 
 
