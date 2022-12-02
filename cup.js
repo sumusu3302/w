@@ -41,8 +41,8 @@ function update() {
     "https://emulatoros.up.railway.app/api?q=matches/current",
     function(json) {
       for (app in json) {
-        $('#score').text(json[app].home_team.goals + ' - ' + json[app].away_team.goals);
-        $('#time').text(json[app].time);
+        $('#score' + app).text(json[app].home_team.goals + ' - ' + json[app].away_team.goals);
+        $('#time' + app).text(json[app].time);
       }
 
       // Patching payload into page element ID = "dog" 
@@ -307,7 +307,7 @@ function current() {
 
         var score = document.createElement("span");
         score.setAttribute("class", "h3 d-flex justify-content-center text-center");
-        score.setAttribute("id", "score");
+        score.setAttribute("id", "score" + app);
         score.innerText = team1.goals + ' - ' + team2.goals;
         maindiv.appendChild(score);
 
@@ -335,7 +335,7 @@ function current() {
 
         var min = document.createElement("span");
         min.setAttribute("class", "p-2 d-flex text-center green-txt");
-        min.setAttribute("id", "time");
+        min.setAttribute("id", "time" + app);
         min.innerHTML = json[app].time;
         datediv.appendChild(min);
 
