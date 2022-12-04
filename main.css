@@ -171,9 +171,6 @@ html {
 		.GameName.active {
 			opacity: 1;
 		}
-		.active {
-			animation: fade-bottom .7s ease-in;
-		  }
 		  .active.fade-left {
 			animation: fade-left 1s ease-in;
 		  }
