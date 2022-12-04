@@ -1,10 +1,13 @@
-<div class="form-popup" id="myForm">
-    <h2 class="text-3xl font-semibold text-center text-gray-200 dark:text-white">Game Request</h2>
+<div class="modal-header">
+  <h2 class="text-3xl font-semibold text-center text-gray-200 dark:text-white">Game Request</h2>
       
-      
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+   
+<div class="modal-body">
    <form id="my-form" method="POST" class="form-container" action="https://script.google.com/macros/s/AKfycbzc4UgrVIBGXxaFoB2R-K53qH5lAM6x4xWAGaakuW9IvvkFCb_Es-N6xR-Sy31du6b6/exec"><br>
   <script>
-    console.log(hi)
+    console.log('hi')
   </script>
   
   <div class="items-center -mx-2 md:flex">
@@ -66,4 +69,8 @@
   
      
   </form>
-      </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+  </div>
