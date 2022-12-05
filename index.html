@@ -165,7 +165,7 @@ img.lazy {
          <div class="items-center -mx-2 md:flex">
           <div class="w-full mx-2">
           <label class="block mb-2 text-sm font-medium text-gray-200">Game Name<span class="text-red-500">*</span></label>
-          <input name="gameName" style="width: 200px;" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" type="text" required>
+          <input name="gameName lazy" style="width: 200px;" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" type="text" required>
           </div>
           <div id="emulatorQuestion" style="display: none;"class="w-full mx-2 mt-4 md:mt-0">
           <label class="block mb-2 text-sm font-medium text-gray-200">Platform<span class="text-red-500">*</span></label>
@@ -236,7 +236,7 @@ img.lazy {
       </div><br>
       <div id="gameQuestion" style="display:none; margin: 0;"class="w-full mt-4 md:mt-0">
       <label class="block mb-2 text-sm font-medium text-gray-200">Game Name<span class="text-red-500">*</span></label>
-      <input id="gameQuestion2"name="gameName" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" type="text" required>
+      <input id="gameQuestion2"name="gameName lazy" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" type="text" required>
       </div><br>
          <div style="margin: 0;"class="w-full mt-4 md:mt-0">
       <label class="block mb-2 text-sm font-medium text-gray-200">Description of the bug<span class="text-red-500">*</span></label>
@@ -379,156 +379,154 @@ img.lazy {
           <a data-bs-toggle="modal" data-bs-target="#modal_frame" data-remote="/request.html">link</a>
           
 
-            <button onclick='window.location.href="/games/sm64"' type=button class="GameName emu"><img height=150 src="/img/mario64.webp" width=150>Super Mario 64</button> 
-            <button onclick='window.location.href="/games/firered"' type=button class="GameName emu"><img height=150 src="/img/firered.webp" width=150>Pokemon Fire Red</button> 
-            <button onclick='window.location.href="/games/tetris"' type=button class="GameName ry"><img height=150 src="/img/tetris.webp" width=150>Tetris</button> 
-            <button onclick='window.location.href="/games/smash"' type=button class="GameName emu"><img height=150 src="/img/smashremix.webp" width=150>Smash Remix</button> 
-            <button onclick='window.location.href="/games/superhot"' type=button class="GameName shoot"><img height=150 src="/img/superhot.webp" width=150>Superhot</button> 
-            <button onclick='window.location.href="/games/retro"' type=button class="GameName"><img height=150 src=/img/icon.webp width=150>Retro Bowl</button> 
-            <button onclick='window.location.href="/games/slope"' type=button class="GameName plat"><img height=150 src="/img/slope.webp" width=150>Slope</button> 
-            <button onclick='window.location.href="/games/basketball"' type=button class="sp GameName"><img height=150 src="/img/basketball-stars.webp"width=150>Basketball Stars</button> 
-            <button onclick='window.location.href="/games/party3"' type=button class="GameName emu"><img height=150 src="/img/party3.webp" width=150>Mario Party 3</button> 
-            <button onclick='window.location.href="/games/supersmash"' type=button class="emu GameName"><img height=150 src="/img/smash.webp" width=150>Super Smash Bros</button> 
-            <button onclick='window.location.href="/games/ocarina"' type=button class="emu GameName"><img height=150 src="/img/ocarina.webp" width=150>Legend of Zelda: The Ocarina of Time</button> 
-            <button onclick='window.location.href="/games/newsuper"' type=button class="emu GameName plat"><img height=150 src="/img/new.webp" width=150>New Super Mario Bros</button> 
-            <button onclick='window.location.href="/games/legends"' type=button class="GameName sp"><img height=150 src="/img/legends.webp" width=150>Basketball Legends 2020</button> 
-            <button onclick='window.location.href="/games/paper"' type=button class="emu GameName plat"><img height=100 src="/img/paper.webp" width=150>Paper Mario</button> 
-            <button onclick='window.location.href="/games/tennis"' type=button class="emu GameName sp"><img height=150 src="/img/tennis.webp" width=150>Mario Tennis</button> 
-            <button onclick='window.location.href="/games/circuit"' type=button class="emu GameName sp"><img height=150 src="/img/circuit.webp" width=150>Mario Kart Super Circuit</button> 
-            <button onclick='window.location.href="/games/golf"' type=button class="emu GameName sp"><img height=150 src="/img/golf.webp" width=150>Mario Golf</button> 
-            <button onclick='window.location.href="/games/madden"' type=button class="emu GameName sp"><img height=165 src="/img/07.webp" width=150>Madden 07</button> 
-            <button onclick='window.location.href="/games/kart64"' type=button class="emu GameName sp"><img height=150 src="/img/kart64.webp" width=160>Mario Kart 64</button> 
-            <button onclick='window.location.href="/games/bomberman"' type=button class="emu GameName plat"><img height=180 src="/img/bomberman.webp" width=150>Bomberman 64</button> 
-            <button onclick='window.location.href="/games/blitz"' type=button class="emu GameName sp"><img height=150 src="/img/blitz.webp" width=155>NFL Blitz 20-03 (GBA)</button> 
-            <button onclick='window.location.href="/games/fighter2"' type=button class="GameName emu"><img height=150 src="/img/street2.webp" width=155>Street Fighter II</button> 
-            <button onclick='window.location.href="/games/world"' type=button class="emu GameName plat"><img height=150 src="/img/world.webp" width=155>Super Mario World</button> 
-            <button onclick='window.location.href="/games/sonic2"' type=button class="emu GameName plat"><img height=150 src="/img/sonic2.webp" width=160>Sonic The Hedgehog 2</button> 
-            <button onclick='window.location.href="/games/gta"' type=button class="emu GameName shoot"><img height=150 src="/img/chinatown.webp" width=160>Grand Theft Auto Chinatown Wars</button> 
-            <button onclick='window.location.href="/games/fnf"' type=button class="ry GameName"><img height=150 src="/img/fnf.webp" width=160>Friday Night Funkin</button> 
-            <button onclick='window.location.href="/games/fnaf4"' type=button class="GameName hor"><img height=150 src="/img/fnaf4.webp" width=160>FNAF 4</button> 
-            <button onclick='window.location.href="/games/fnaf2"' type=button class="GameName hor"><img height=150 src="/img/fnaf2.webp" width=160>FNAF 2</button> 
-            <button onclick='window.location.href="/games/fnaf3"' type=button class="GameName hor"><img height=150 src="/img/fnaf3.webp" width=150>FNAF 3</button> 
-            <button onclick='window.location.href="/games/fnaf"' type=button class="GameName hor"><img height=150 src="/img/fnaf.webp" width=160>FNAF</button> 
-            <button onclick='window.location.href="/games/nba"' type=button class="emu GameName sp"><img height=150 src="/img/jam0.webp" width=170>NBA Jam 2000</button> 
-            <button onclick='window.location.href="/games/nba02"' type=button class="emu GameName sp"><img height=150 src="/img/jam02.webp" width=160>NBA Jam 2002</button>
-            <button onclick='window.location.href="/games/wordle"' type=button class="GameName ot"><img height=150 src=/img/wordle.webp width=160>Wordle Unlimited</button> 
-            <button onclick='window.location.href="/games/wbwwb"' type=button class="GameName ot"><img height=150 src="/img/wbwwb.webp" width=160>We Become What we Behold</button> 
-            <button onclick='window.location.href="/games/mktournament"' type=button class="GameName emu"><img height=150 src="/img/mk.webp"width=160>Mortal Kombat Tournament Edition</button> 
-            <button onclick='window.location.href="/games/dk"' type=button class="emu GameName plat"><img height=150 src="/img/kong.webp" width=160>Donkey Kong</button> 
-            <button onclick='window.location.href="/games/adofai"' type=button class="GameName ry"><img height=150 src="/img/adofai.webp" width=160>A Dance Of Fire And Ice</button> 
-            <button onclick='window.location.href="/uv/alchemy"' type=button class="GameName ot"><img height=150 src="/img/alchemy.webp" width=160>Little Alchemy</button> 
-            <button onclick='window.location.href="/games/cookie"' type=button class="GameName ot"><img height=150 src=/img/perfectCookie.webp width=160>Cookie Clicker</button> 
-            <button onclick='window.location.href="/uv/alchemy2"' type=button class="GameName ot"><img height=150 src="/img/alchemy2.webp" width=160>Little Alchemy 2</button> 
-            <button onclick='window.location.href="/games/1v1"' type=button class="mp GameName shoot"><img height=150 src="/img/1v1.webp" width=160>1v1.LOL</button> 
-            <button onclick='window.location.href="/games/sansfight"' type=button class="GameName ry"><img height=150 src=/img/undertale.webp width=160>Sans Fight</button> 
-            <button onclick='window.location.href="/games/dealornodeal"' type=button class="GameName ot"><img height=150 src=/img/download.webp width=160>Deal or No Deal</button> 
-            <button onclick='window.location.href="/games/bros2"' type=button class="emu GameName plat"><img height=150 src=/img/1200px-SMA.webp width=160>Super Mario Bros 2</button> 
-            <button onclick='window.location.href="/games/bros3"' type=button class="emu GameName plat"><img height=150 src=/img/Super_Mario_Advance_4_Box.webp width=160>Super Mario Bros 3</button> 
-            <button onclick='window.location.href="/games/yoshi"' type=button class="emu GameName plat"><img height=150 src=/img/Super_Mario_Advance_3_Box_Art.webp width=160>Yoshi's Island</button> 
-            <button onclick='window.location.href="/games/paper2"' type=button class="GameName mp"><img height=150 src=/img/fav.webp width=160>Paper.io 2</button> 
-            <button onclick='window.location.href="/games/bison"' type=button class="ot GameName plat"><img height=150 src="/img/bison.webp" width=150>Burrito Bison</button> 
-            <button onclick='window.location.href="/games/subway"' type=button class="ot GameName"><img height=150 src=/img/subway.webp width=175>Subway Surfers</button> 
-            <button onclick='window.location.href="/games/ms-solitarie"' type=button class="GameName ot"><img height=150 src="/img/solitaire.webp" width=175>Microsoft Solitaire Collection</button> 
-            <button onclick='window.location.href="/games/temple"' type=button class="ot GameName plat"><img height=150 src=/img/Temple_Run_2.webp width=175>Temple Run 2</button>
-            <button onclick='window.location.href="/games/bitlife"' type=button class="GameName ot"><img height=150 src="/img/bitlife.webp" width=175>BitLife</button>
-            <button onclick='window.location.href="/games/2048"' type=button class="GameName ot"><img height=150 src=/img/1200px-2048_logo.svg.webp width=175>2048</button> 
-            <button onclick='window.location.href="/uv/roblox"' type=button class="ot GameName mp"><img height=150 src="/img/roblox.webp" width=150>Roblox </button> 
-            <button onclick='window.location.href="/uv/skribbl"' type=button class="ot GameName mp"><img height=150 src="/img/skribbl.webp" width=150>Skribbl.io</button>
-            <button onclick='window.location.href="/uv/krunker"' type=button class="mp GameName shoot"><img height=150 src=/img/krunker.webp width=150>Krunker.io</button> 
-            <button onclick='window.location.href="/uv/venge"' type=button class="mp GameName shoot"><img height=150 src=/img/venge.webp width=150>Venge.io</button> 
-            <button onclick='window.location.href="/uv/amongus"' type=button class="ot GameName mp"><img height=150 src=/img/amongus.webp width=150>Among Us</button> 
-            <button onclick='window.location.href="/uv/minecraft"' type=button class="ot GameName mp"><img height=150 src=/img/minecraftb.webp width=150>Minecraft</button> 
-            <button onclick='window.location.href="/uv/solar"' type=button class="GameName ot"><img height=150 src="/img/solar.webp" width=150>Solar Smash</button> 
-            <button onclick='window.location.href="/uv/plague"' type=button class="GameName ot"><img height=150 src=/img/Plague_Inc._app_icon.webp width=150>Plague Inc.</button>
-            <button onclick='window.location.href="/uv/corrupted"' type=button class="GameName ry"><img height=150 src=img/PibbifiedBFIdle.gif width=150>Friday Night Funkin Pibby Corrupted (Proxied)</button> 
-            <button onclick='window.location.href="/uv/linerider"' type=button class="ot GameName ry"><img height=150 src=img/line-rider.webp width=150>Line Rider</button>
-            <button onclick='window.location.href="/uv/force"' type=button class="mp GameName shoot"><img height=150 src=/img/sTvkJNfKT5-AbjOQ8BnCQmvSbn37nlaPJpnphb-xGa3pcOWvX9_o17hr4Zo0wqL4dq0.webp width=150>Bullet Force</button> 
-            <button onclick='window.location.href="/uv/granny"' type=button class="GameName hor"><img height=150 src=/img/230x0w.webp width=150>Granny</button> 
-            <button onclick='window.location.href="/uv/house"' type=button class="GameName ot"><img height=150 src=/img/house-flipper-game-review.webp width=150>House Flipper</button>
-            <button onclick='window.location.href="/uv/pubg"' type=button class="mp GameName shoot"><img height=170 src=/img/PUBG-Squad-Logo-PNG-Picture.webp width=150>PUBG Mobile</button>
-            <button onclick='window.location.href="/games/hunt"' type=button class="emu GameName shoot"><img height=150 src=/img/duckhunt-sq-1643929325298.webp width=150>Duck Hunt</button> 
-            <button onclick='window.location.href="/games/doodle"' type=button class="GameName plat"><img height=150 src=/img/doodle.webp width=150>Doodle Jump</button> 
-            <button onclick='window.location.href="/games/cattrap"' type=button class="GameName ot"><img height=120 src=/img/cattrap.webp width=180>Cat Trap</button> 
-            <button onclick='window.location.href="/games/bloons4"' type=button class="GameName ot"><img height=150 src="/img/bloons2.webp" width=150>Bloons Tower Defense 4</button>
-            <button onclick='window.location.href="/games/bloons2"' type=button class="GameName ot"><img height=150 src=/img/bloonstd2.webp width=150>Bloons Tower Defense 2</button> 
-            <button onclick='window.location.href="/games/crossy"' type=button class="ot GameName plat"><img height=150 src=/img/crossyroad.webp width=150>Crossy Road</button> 
-            <button onclick='window.location.href="/games/robogo"' type=button class="ot GameName plat"><img height=100 src=/img/title.webp width=200>RoboGo</button> 
-            <button onclick='window.location.href="/games/greybox"' type=button class="ot GameName plat"><img height=150 src=/img/pnUIrT.webp width=180>Grey-Box Testing</button> 
-            <button onclick='window.location.href="/games/exhibit"' type=button class="ot GameName hor"><img height=150 src=/img/R0bBdx.gif width=180 alt="gif preset" class=gif-file>Exhibit Of Sorrows</button> 
-            <button onclick='window.location.href="/games/sort"' type=button class="GameName ot"><img height=150 src="img/NsZPxC.webp" width=180 alt="gif preset" class=gif-file>Sort The Court</button>
-            <button onclick='window.location.href="/games/dreader"' type=button class="GameName hor"><img height=150 src="/img/dreader.webp" width=190 alt="gif preset" class=gif-file>Dreader</button>
-            <button onclick='window.location.href="/games/lose95"' type=button class="GameName ot"><img height=150 src=/img/TuMDTk.gif width=180 alt="gif preset" class=gif-file>Lose95</button> 
-            <button onclick='window.location.href="/games/touch"' type=button class="GameName ot"><img height=150 src=/img/a0192014944_10.webp width=150 alt="gif preset" class=gif-file>Please Don't Touch Anything</button> 
-            <button onclick='window.location.href="/games/adcap"' type=button class="GameName ot"><img height=150 src="/img/adcap.webp" width=150>AdVenture Capitalist</button> 
-            <button onclick='window.location.href="/games/open"' type=button class="GameName hor"><img height=140 src=img/IeaDep.webp width=175>The Open House</button>
-            <button onclick='window.location.href="/games/burger"' type=button class="GameName hor"><img height=150 src=/img/title2.webp width=150>Burger & Frights</button> 
-            <button onclick="window.location.href='/uv/angry2'" class="ot GameName" type="button"><img src="/img/angry2.webp" height="150" width="150">Angry Birds 2</button>
-            <button onclick="window.location.href='/games/doge'" class="  GameName" type="button"><img src="/img/dogeminer_300x300.webp" height="150" width="150">Doge Miner</button>
-            <button onclick='window.location.href="https://ref.emulatoros.ga"' type=button class="GameName"><img height=150 src=/img/45306907.webp width=150>CroxyPr*xy</button>
-            <button onclick='window.location.href="https://ram.emulatoros.ga/"' type=button class="GameName"><img height=150 src=/img/logo.webp width=160>Rammerhead Browser</button> 
-            <button onclick='window.location.href="https://www.emulatoros.ga/"' type=button class="GameName mp"><img height=150 src=/img/GrassBlock_HighRes.webp width=150>Minecraft Java 1.5.2</button> 
-            <button onclick="window.location.href='/games/game'" class="ot GameName" type="button"><img src="/img/display.webp" height="150" width="170">Game Inside a Game</button>     
-            <button onclick="window.location.href='/uv/run'" class="ot GameName plat" type="button" ><img src="img/5StEA6l0v_IwkcWsyItrqpz5DPhvEZqjS4njo1x8juDHhTPzRdOllSUXk8Ju_88G1g.webp" height="150" width="150">Cookie Run: Kingdom</button>
-            <button onclick="window.location.href='/games/burgeria'" class="GameName ot" type="button" ><img src="/img/burgeria.webp" height="150" width="150">Papa's Burgeria</button>
-            <button onclick='window.location.href="/games/digdug"' type=button class="emu GameName"><img height=140 src="/img/digdug.webp" width=150>DigDug</button>
-            <button onclick='window.location.href="/games/mspac"' type=button class="emu GameName"><img height=150 src=img/MsPac-40th-logo.webp width=150>Mrs. Pac Man</button>
-            <button onclick='window.location.href="/games/jrpac"' type=button class="emu GameName"><img height=150 src=/img/Jr_pac_flyer.webp width=170>Jr Pac Man</button>
-            <button onclick='window.location.href="/games/emulatorjs"' type=button class="emu GameName"><img height=150 src=/docs/Logo.png width=150>Upload Rom</button> 
-            <button onclick='window.location.href="/uv/geometry"' type=button class="plat GameName"><img height=150 src=img/p7kWbWBFxQIrzolEqiV5uSvctLeyssZvBV7UBOX29wzZI52IdcSs4qCB_zsQJL1mt9A.webp width=150>Geometry Dash Lite</button>
-            <button onclick='window.location.href="/games/raft2"' type=button class="GameName"><img height=150 src="/img/raft2.webp" width=150>Raft Wars 2</button>
-            <button onclick='window.location.href="/games/raft"' type=button class="GameName"><img height=150 src="/img/raft.webp" width=150>Raft Wars</button> 
-            <button onclick='window.location.href="/games/fpa"' type=button class="GameName plat"><img height=150 src="/img/uUknF-T1uzoMBLoR7CJo2R6GT_2RYs9qxXSvzCxsxZ-i7KD43k3RsdCyw7xXESIkOUg.webp" width=150>The Fancy Pants Adventures</button>
-            <button onclick='window.location.href="/games/1on1"' type=button class="GameName sp"><img height=150 src="/img/1-on-1-soccer.webp" width=150>1on1 Soccer</button>
-            <button onclick='window.location.href="/games/cell"' type=button class="ot GameName"><img height=150 src="/img/cell_to_singularity_app_icon.webp" width=150>Cell To Singularity</button>
-            <button onclick='window.location.href="/games/knifehit"' type=button class="ot GameName ry"><img height=150 src="/img/knife-hit.webp " width=150>Knife Hit</button>
-            <button onclick='window.location.href="/games/mc"' type=button class="ot plat GameName"><img height=150 src="/img/ml3khbi88bf.webp " width=150>Minecraft 0.30</button>
-            <button onclick='window.location.href="/games/breaklock"' type=button class="ot GameName"><img height=150 src="/img/breaklock.webp " width=150>Breaklock</button>
-            <button onclick='window.location.href="/games/friendlyfire"' type=button class="ot GameName plat"><img height=150 src="/img/friendly.webp " width=150>Friendly Fire</button>
-            <button onclick='window.location.href="/games/xx142-b2exe"' type=button class="ot GameName plat"><img height=150 src="/img/xx.webp " width=150>xx142-b2exe</button>
-            <button onclick='window.location.href="/games/flappy"' type=button class="ry GameName plat"><img height=150 src="/img/flappy.webp " width=150>Flappy Bird</button>
-            <button onclick='window.location.href="/uv/candy"' type=button class="ot GameName"><img height=150 src="/img/crush.webp " width=150>Candy Crush Saga</button>
-            <button onclick='window.location.href="/uv/candy2"' type=button class="ot GameName"><img height=150 src="/img/candy2.webp " width=150>Candy Clicker 2</button>
-            <button onclick='window.location.href="/games/freezeria"' type=button class="ot GameName"><img height=150 src="/img/freezeria.webp " width=150>Papa's Freezeria</button>
-            <button onclick='window.location.href="/games/pizzeria"' type=button class="ot GameName"><img height=150 src="/img/pizzeria.webp " width=150>Papa's Pizzeria</button>
-            <button onclick='window.location.href="/games/scooperia"' type=button class="ot GameName"><img height=150 src="/img/scooperia.webp " width=150>Papa's Scooperia</button>
-            <button onclick='window.location.href="/games/wingeria"' type=button class="ot GameName"><img height=150 src="/img/wingeria.webp " width=150>Papa's Wingeria</button>
-            <button onclick='window.location.href="/games/assessment"' type=button class="hor GameName"><img height=150 src="/img/assessment.webp " width=150>Assessment Examination</button>
-            <button onclick='window.location.href="/games/run3"' type=button class="ot GameName"><img height=150 src="/img/run3.webp " width=150>Run 3</button>
-            <button onclick='window.location.href="/uv/gacha"' type=button class="GameName"><img height=150 src="/img/gacha.webp " width=150>Gacha Life</button>
-            <button onclick='window.location.href="/uv/club"' type=button class="GameName"><img height=150 src="/img/club.webp " width=150>Gacha Club</button>
-            <button onclick='window.location.href="/games/baldi"' type=button class="GameName"><img height=150 src="/img/baldi-basics_200x200_8a8.webp " width=150>Baldis Basics</button>
-            <button onclick='window.location.href="/games/justfall"' type=button class="mp GameName"><img height=150 src="/img/justfall.webp " width=150>JustFall.LOL</button>
-            <button onclick='window.location.href="/uv/rocket"' type=button class="mp GameName"><img height=150 src="/img/rocket.webp " width=150>Rocket League Sideswipe</button>
-            <button onclick='window.location.href="/games/emerald"' type=button class="emu GameName"><img height=150 src="/img/emerald.webp " width=150>Pokemon Emerald</button>
-<button onclick='window.location.href="/uv/stumble"' type=button class="mp GameName"><img height=150 src="/img/stumble.webp " width=150>Stumble Guys</button>
-            <button onclick='window.location.href="/games/fruitninja"' type=button class=" GameName"><img height=150 src="/img/fruitninja.webp" width=150>Fruit Ninja</button>
-            <button onclick='window.location.href="/games/jetpack"' type=button class=" GameName"><img height=150 src="/img/jetpack.webp" width=150>Jetpack Joyride</button>
-            <button onclick='window.location.href="/games/knight"' type=button class=" GameName"><img height=150 src="/img/knight.webp" width=150>Apple Knight</button>
-            <button onclick='window.location.href="/games/mariovsluigi"' type=button class="mp GameName"><img height=150 src="/img/mariovsluigi.webp" width=150>Mario VS Luigi</button>
-            <button onclick='window.location.href="/games/sketchbook"' type=button class="ot GameName"><img height=150 src="/img/sketchbook.webp" width=150>Sketchbook 0.4</button>
-            <button onclick='window.location.href="/games/tekken3"' type=button class="emu GameName"><img height=150 src="/img/tekken3.webp" width=150>Tekken 3</button>
-        <button onclick='window.location.href="/games/drift"' type=button class="sp GameName"><img height=150 src="/img/drift.webp" width=150>Drift Hunters</button>
-           <button onclick='window.location.href="/games/pressing"' type=button class="ot GameName"><img height=150 src="/img/pressure.webp" width=150>Pressing Under Pressure</button>
-            <button onclick='window.location.href="/games/portaboy"' type=button class="hor GameName"><img height=150 src="/img/portaboy.webp" width=150>PortaBoy+</button>
-            <button onclick='window.location.href="/games/sword"' type=button class="ot plat GameName"><img height=150 src="/img/sword.webp" width=150>Deepest Sword</button>
-
-  <button onclick='window.location.href="/games/tunnelrush"' type=button class="ry GameName"><img height=150 src="/img/tunnelrush.webp" width=150>Tunnel Rush</button>
-
-            <button onclick='window.location.href="/games/georgeandtheprinter"' type=button class=" GameName"><img height=150 src="/img/georgeandtheprinter.webp" width=150>George and the Printer</button>
-            <button onclick='window.location.href="/games/getaway"' type=button class="mp plat GameName"><img height=150 src="/img/getaway-shootout.webp" width=150>Getaway Shootout</button>
-            <button onclick='window.location.href="/games/hotdoggeria"' type=button class="ot GameName"><img height=150 src="/img/hotdoggeria.webp" width=150>Papa's Hot Doggeria</button>
-            <button onclick='window.location.href="/games/louie"' type=button class="plat GameName"><img height=150 src="/img/louie.webp" width=150>Papa Louie: When Pizzas Attack!</button>
-            <button onclick='window.location.href="/games/soccer-random"' type=button class="sp mp GameName"><img height=150 src="/img/soccer-random.webp" width=150>Soccer Random</button>
-              <button onclick='window.location.href="/games/boxing-physics2"' type=button class="sp mp GameName"><img height=150 src="/img/physics.webp" width=150>Boxing Physics 2</button> 
-              <button onclick='window.location.href="/uv/hole"' type=button class=" mp GameName"><img height=150 src="/img/hole.webp" width=150>Hole.io</button> 
-           <button onclick='window.location.href="/games/tacomia"' type=button class=" GameName"><img height=150 src="/img/tacomia.webp" width=150>Papa's Taco Mia!</button> 
-           <button onclick='window.location.href="/games/unfair"' type=button class=" plat GameName"><img height=150 src="/img/unfair.webp" width=150>Unfair Mario</button> 
-           <button onclick='window.location.href="/games/blockpost"' type=button class=" mp GameName"><img height=150 src="/img/blockpost.webp" width=150>Blockpost</button> 
-           <button onclick='window.location.href="/games/google-snake"' type=button class="ot GameName"><img height=150 src="/img/snake.webp" width=150>Google Snake</button> 
-           <button onclick='window.location.href="/games/FBWG"' type=button class=" plat mp GameName"><img height=150 src="/img/fbwg.webp" width=150>Fireboy & Watergirl: Forest Temple</button> 
-        <button onclick='window.location.href="/games/chrome-dino"' type=button class="plat GameName"><img height=150 src="/img/dino.webp" width=150>Chrome Dino</button> 
-        <button onclick='window.location.href="/games/wounded-summer"' type=button class=" GameName"><img height=150 src="/img/wounded.webp" width=150>Wounded Summer</button> 
-        <button onclick='window.location.href="/fifa-world-cup"' type=button class="GameName sp"><img height=150 src="/img/qatar.png" width=150>Qatar World Cup Streams</button> 
+            <button onclick='window.location.href="/games/sm64"' type=button class="GameName lazy emu"><img height=150 src="/img/mario64.webp" width=150>Super Mario 64</button> 
+            <button onclick='window.location.href="/games/firered"' type=button class="GameName lazy emu"><img height=150 src="/img/firered.webp" width=150>Pokemon Fire Red</button> 
+            <button onclick='window.location.href="/games/tetris"' type=button class="GameName lazy ry"><img height=150 src="/img/tetris.webp" width=150>Tetris</button> 
+            <button onclick='window.location.href="/games/smash"' type=button class="GameName lazy emu"><img height=150 src="/img/smashremix.webp" width=150>Smash Remix</button> 
+            <button onclick='window.location.href="/games/superhot"' type=button class="GameName lazy shoot"><img height=150 src="/img/superhot.webp" width=150>Superhot</button> 
+            <button onclick='window.location.href="/games/retro"' type=button class="GameName lazy"><img height=150 src=/img/icon.webp width=150>Retro Bowl</button> 
+            <button onclick='window.location.href="/games/slope"' type=button class="GameName lazy plat"><img height=150 src="/img/slope.webp" width=150>Slope</button> 
+            <button onclick='window.location.href="/games/basketball"' type=button class="sp GameName lazy"><img height=150 src="/img/basketball-stars.webp"width=150>Basketball Stars</button> 
+            <button onclick='window.location.href="/games/party3"' type=button class="GameName lazy emu"><img height=150 src="/img/party3.webp" width=150>Mario Party 3</button> 
+            <button onclick='window.location.href="/games/supersmash"' type=button class="emu GameName lazy"><img height=150 src="/img/smash.webp" width=150>Super Smash Bros</button> 
+            <button onclick='window.location.href="/games/ocarina"' type=button class="emu GameName lazy"><img height=150 src="/img/ocarina.webp" width=150>Legend of Zelda: The Ocarina of Time</button> 
+            <button onclick='window.location.href="/games/newsuper"' type=button class="emu GameName lazy plat"><img height=150 src="/img/new.webp" width=150>New Super Mario Bros</button> 
+            <button onclick='window.location.href="/games/legends"' type=button class="GameName lazy sp"><img height=150 src="/img/legends.webp" width=150>Basketball Legends 2020</button> 
+            <button onclick='window.location.href="/games/paper"' type=button class="emu GameName lazy plat"><img height=100 src="/img/paper.webp" width=150>Paper Mario</button> 
+            <button onclick='window.location.href="/games/tennis"' type=button class="emu GameName lazy sp"><img height=150 src="/img/tennis.webp" width=150>Mario Tennis</button> 
+            <button onclick='window.location.href="/games/circuit"' type=button class="emu GameName lazy sp"><img height=150 src="/img/circuit.webp" width=150>Mario Kart Super Circuit</button> 
+            <button onclick='window.location.href="/games/golf"' type=button class="emu GameName lazy sp"><img height=150 src="/img/golf.webp" width=150>Mario Golf</button> 
+            <button onclick='window.location.href="/games/madden"' type=button class="emu GameName lazy sp"><img height=165 src="/img/07.webp" width=150>Madden 07</button> 
+            <button onclick='window.location.href="/games/kart64"' type=button class="emu GameName lazy sp"><img height=150 src="/img/kart64.webp" width=160>Mario Kart 64</button> 
+            <button onclick='window.location.href="/games/bomberman"' type=button class="emu GameName lazy plat"><img height=180 src="/img/bomberman.webp" width=150>Bomberman 64</button> 
+            <button onclick='window.location.href="/games/blitz"' type=button class="emu GameName lazy sp"><img height=150 src="/img/blitz.webp" width=155>NFL Blitz 20-03 (GBA)</button> 
+            <button onclick='window.location.href="/games/fighter2"' type=button class="GameName lazy emu"><img height=150 src="/img/street2.webp" width=155>Street Fighter II</button> 
+            <button onclick='window.location.href="/games/world"' type=button class="emu GameName lazy plat"><img height=150 src="/img/world.webp" width=155>Super Mario World</button> 
+            <button onclick='window.location.href="/games/sonic2"' type=button class="emu GameName lazy plat"><img height=150 src="/img/sonic2.webp" width=160>Sonic The Hedgehog 2</button> 
+            <button onclick='window.location.href="/games/gta"' type=button class="emu GameName lazy shoot"><img height=150 src="/img/chinatown.webp" width=160>Grand Theft Auto Chinatown Wars</button> 
+            <button onclick='window.location.href="/games/fnf"' type=button class="ry GameName lazy"><img height=150 src="/img/fnf.webp" width=160>Friday Night Funkin</button> 
+            <button onclick='window.location.href="/games/fnaf4"' type=button class="GameName lazy hor"><img height=150 src="/img/fnaf4.webp" width=160>FNAF 4</button> 
+            <button onclick='window.location.href="/games/fnaf2"' type=button class="GameName lazy hor"><img height=150 src="/img/fnaf2.webp" width=160>FNAF 2</button> 
+            <button onclick='window.location.href="/games/fnaf3"' type=button class="GameName lazy hor"><img height=150 src="/img/fnaf3.webp" width=150>FNAF 3</button> 
+            <button onclick='window.location.href="/games/fnaf"' type=button class="GameName lazy hor"><img height=150 src="/img/fnaf.webp" width=160>FNAF</button> 
+            <button onclick='window.location.href="/games/nba"' type=button class="emu GameName lazy sp"><img height=150 src="/img/jam0.webp" width=170>NBA Jam 2000</button> 
+            <button onclick='window.location.href="/games/nba02"' type=button class="emu GameName lazy sp"><img height=150 src="/img/jam02.webp" width=160>NBA Jam 2002</button>
+            <button onclick='window.location.href="/games/wordle"' type=button class="GameName lazy ot"><img height=150 src=/img/wordle.webp width=160>Wordle Unlimited</button> 
+            <button onclick='window.location.href="/games/wbwwb"' type=button class="GameName lazy ot"><img height=150 src="/img/wbwwb.webp" width=160>We Become What we Behold</button> 
+            <button onclick='window.location.href="/games/mktournament"' type=button class="GameName lazy emu"><img height=150 src="/img/mk.webp"width=160>Mortal Kombat Tournament Edition</button> 
+            <button onclick='window.location.href="/games/dk"' type=button class="emu GameName lazy plat"><img height=150 src="/img/kong.webp" width=160>Donkey Kong</button> 
+            <button onclick='window.location.href="/games/adofai"' type=button class="GameName lazy ry"><img height=150 src="/img/adofai.webp" width=160>A Dance Of Fire And Ice</button> 
+            <button onclick='window.location.href="/uv/alchemy"' type=button class="GameName lazy ot"><img height=150 src="/img/alchemy.webp" width=160>Little Alchemy</button> 
+            <button onclick='window.location.href="/games/cookie"' type=button class="GameName lazy ot"><img height=150 src=/img/perfectCookie.webp width=160>Cookie Clicker</button> 
+            <button onclick='window.location.href="/uv/alchemy2"' type=button class="GameName lazy ot"><img height=150 src="/img/alchemy2.webp" width=160>Little Alchemy 2</button> 
+            <button onclick='window.location.href="/games/1v1"' type=button class="mp GameName lazy shoot"><img height=150 src="/img/1v1.webp" width=160>1v1.LOL</button> 
+            <button onclick='window.location.href="/games/sansfight"' type=button class="GameName lazy ry"><img height=150 src=/img/undertale.webp width=160>Sans Fight</button> 
+            <button onclick='window.location.href="/games/dealornodeal"' type=button class="GameName lazy ot"><img height=150 src=/img/download.webp width=160>Deal or No Deal</button> 
+            <button onclick='window.location.href="/games/bros2"' type=button class="emu GameName lazy plat"><img height=150 src=/img/1200px-SMA.webp width=160>Super Mario Bros 2</button> 
+            <button onclick='window.location.href="/games/bros3"' type=button class="emu GameName lazy plat"><img height=150 src=/img/Super_Mario_Advance_4_Box.webp width=160>Super Mario Bros 3</button> 
+            <button onclick='window.location.href="/games/yoshi"' type=button class="emu GameName lazy plat"><img height=150 src=/img/Super_Mario_Advance_3_Box_Art.webp width=160>Yoshi's Island</button> 
+            <button onclick='window.location.href="/games/paper2"' type=button class="GameName lazy mp"><img height=150 src=/img/fav.webp width=160>Paper.io 2</button> 
+            <button onclick='window.location.href="/games/bison"' type=button class="ot GameName lazy plat"><img height=150 src="/img/bison.webp" width=150>Burrito Bison</button> 
+            <button onclick='window.location.href="/games/subway"' type=button class="ot GameName lazy"><img height=150 src=/img/subway.webp width=175>Subway Surfers</button> 
+            <button onclick='window.location.href="/games/ms-solitarie"' type=button class="GameName lazy ot"><img height=150 src="/img/solitaire.webp" width=175>Microsoft Solitaire Collection</button> 
+            <button onclick='window.location.href="/games/temple"' type=button class="ot GameName lazy plat"><img height=150 src=/img/Temple_Run_2.webp width=175>Temple Run 2</button>
+            <button onclick='window.location.href="/games/bitlife"' type=button class="GameName lazy ot"><img height=150 src="/img/bitlife.webp" width=175>BitLife</button>
+            <button onclick='window.location.href="/games/2048"' type=button class="GameName lazy ot"><img height=150 src=/img/1200px-2048_logo.svg.webp width=175>2048</button> 
+            <button onclick='window.location.href="/uv/roblox"' type=button class="ot GameName lazy mp"><img height=150 src="/img/roblox.webp" width=150>Roblox </button> 
+            <button onclick='window.location.href="/uv/skribbl"' type=button class="ot GameName lazy mp"><img height=150 src="/img/skribbl.webp" width=150>Skribbl.io</button>
+            <button onclick='window.location.href="/uv/krunker"' type=button class="mp GameName lazy shoot"><img height=150 src=/img/krunker.webp width=150>Krunker.io</button> 
+            <button onclick='window.location.href="/uv/venge"' type=button class="mp GameName lazy shoot"><img height=150 src=/img/venge.webp width=150>Venge.io</button> 
+            <button onclick='window.location.href="/uv/amongus"' type=button class="ot GameName lazy mp"><img height=150 src=/img/amongus.webp width=150>Among Us</button> 
+            <button onclick='window.location.href="/uv/minecraft"' type=button class="ot GameName lazy mp"><img height=150 src=/img/minecraftb.webp width=150>Minecraft</button> 
+            <button onclick='window.location.href="/uv/solar"' type=button class="GameName lazy ot"><img height=150 src="/img/solar.webp" width=150>Solar Smash</button> 
+            <button onclick='window.location.href="/uv/plague"' type=button class="GameName lazy ot"><img height=150 src=/img/Plague_Inc._app_icon.webp width=150>Plague Inc.</button>
+            <button onclick='window.location.href="/uv/corrupted"' type=button class="GameName lazy ry"><img height=150 src=img/PibbifiedBFIdle.gif width=150>Friday Night Funkin Pibby Corrupted (Proxied)</button> 
+            <button onclick='window.location.href="/uv/linerider"' type=button class="ot GameName lazy ry"><img height=150 src=img/line-rider.webp width=150>Line Rider</button>
+            <button onclick='window.location.href="/uv/force"' type=button class="mp GameName lazy shoot"><img height=150 src=/img/sTvkJNfKT5-AbjOQ8BnCQmvSbn37nlaPJpnphb-xGa3pcOWvX9_o17hr4Zo0wqL4dq0.webp width=150>Bullet Force</button> 
+            <button onclick='window.location.href="/uv/granny"' type=button class="GameName lazy hor"><img height=150 src=/img/230x0w.webp width=150>Granny</button> 
+            <button onclick='window.location.href="/uv/house"' type=button class="GameName lazy ot"><img height=150 src=/img/house-flipper-game-review.webp width=150>House Flipper</button>
+            <button onclick='window.location.href="/uv/pubg"' type=button class="mp GameName lazy shoot"><img height=170 src=/img/PUBG-Squad-Logo-PNG-Picture.webp width=150>PUBG Mobile</button>
+            <button onclick='window.location.href="/games/hunt"' type=button class="emu GameName lazy shoot"><img height=150 src=/img/duckhunt-sq-1643929325298.webp width=150>Duck Hunt</button> 
+            <button onclick='window.location.href="/games/doodle"' type=button class="GameName lazy plat"><img height=150 src=/img/doodle.webp width=150>Doodle Jump</button> 
+            <button onclick='window.location.href="/games/cattrap"' type=button class="GameName lazy ot"><img height=120 src=/img/cattrap.webp width=180>Cat Trap</button> 
+            <button onclick='window.location.href="/games/bloons4"' type=button class="GameName lazy ot"><img height=150 src="/img/bloons2.webp" width=150>Bloons Tower Defense 4</button>
+            <button onclick='window.location.href="/games/bloons2"' type=button class="GameName lazy ot"><img height=150 src=/img/bloonstd2.webp width=150>Bloons Tower Defense 2</button> 
+            <button onclick='window.location.href="/games/crossy"' type=button class="ot GameName lazy plat"><img height=150 src=/img/crossyroad.webp width=150>Crossy Road</button> 
+            <button onclick='window.location.href="/games/robogo"' type=button class="ot GameName lazy plat"><img height=100 src=/img/title.webp width=200>RoboGo</button> 
+            <button onclick='window.location.href="/games/greybox"' type=button class="ot GameName lazy plat"><img height=150 src=/img/pnUIrT.webp width=180>Grey-Box Testing</button> 
+            <button onclick='window.location.href="/games/exhibit"' type=button class="ot GameName lazy hor"><img height=150 src=/img/R0bBdx.gif width=180 alt="gif preset" class=gif-file>Exhibit Of Sorrows</button> 
+            <button onclick='window.location.href="/games/sort"' type=button class="GameName lazy ot"><img height=150 src="img/NsZPxC.webp" width=180 alt="gif preset" class=gif-file>Sort The Court</button>
+            <button onclick='window.location.href="/games/dreader"' type=button class="GameName lazy hor"><img height=150 src="/img/dreader.webp" width=190 alt="gif preset" class=gif-file>Dreader</button>
+            <button onclick='window.location.href="/games/lose95"' type=button class="GameName lazy ot"><img height=150 src=/img/TuMDTk.gif width=180 alt="gif preset" class=gif-file>Lose95</button> 
+            <button onclick='window.location.href="/games/touch"' type=button class="GameName lazy ot"><img height=150 src=/img/a0192014944_10.webp width=150 alt="gif preset" class=gif-file>Please Don't Touch Anything</button> 
+            <button onclick='window.location.href="/games/adcap"' type=button class="GameName lazy ot"><img height=150 src="/img/adcap.webp" width=150>AdVenture Capitalist</button> 
+            <button onclick='window.location.href="/games/open"' type=button class="GameName lazy hor"><img height=140 src=img/IeaDep.webp width=175>The Open House</button>
+            <button onclick='window.location.href="/games/burger"' type=button class="GameName lazy hor"><img height=150 src=/img/title2.webp width=150>Burger & Frights</button> 
+            <button onclick="window.location.href='/uv/angry2'" class="ot GameName lazy" type="button"><img src="/img/angry2.webp" height="150" width="150">Angry Birds 2</button>
+            <button onclick="window.location.href='/games/doge'" class="  GameName lazy" type="button"><img src="/img/dogeminer_300x300.webp" height="150" width="150">Doge Miner</button>
+            <button onclick='window.location.href="https://ref.emulatoros.ga"' type=button class="GameName lazy"><img height=150 src=/img/45306907.webp width=150>CroxyPr*xy</button>
+            <button onclick='window.location.href="https://ram.emulatoros.ga/"' type=button class="GameName lazy"><img height=150 src=/img/logo.webp width=160>Rammerhead Browser</button> 
+            <button onclick='window.location.href="https://www.emulatoros.ga/"' type=button class="GameName lazy mp"><img height=150 src=/img/GrassBlock_HighRes.webp width=150>Minecraft Java 1.5.2</button> 
+            <button onclick="window.location.href='/games/game'" class="ot GameName lazy" type="button"><img src="/img/display.webp" height="150" width="170">Game Inside a Game</button>     
+            <button onclick="window.location.href='/uv/run'" class="ot GameName lazy plat" type="button" ><img src="img/5StEA6l0v_IwkcWsyItrqpz5DPhvEZqjS4njo1x8juDHhTPzRdOllSUXk8Ju_88G1g.webp" height="150" width="150">Cookie Run: Kingdom</button>
+            <button onclick="window.location.href='/games/burgeria'" class="GameName lazy ot" type="button" ><img src="/img/burgeria.webp" height="150" width="150">Papa's Burgeria</button>
+            <button onclick='window.location.href="/games/digdug"' type=button class="emu GameName lazy"><img height=140 src="/img/digdug.webp" width=150>DigDug</button>
+            <button onclick='window.location.href="/games/mspac"' type=button class="emu GameName lazy"><img height=150 src=img/MsPac-40th-logo.webp width=150>Mrs. Pac Man</button>
+            <button onclick='window.location.href="/games/jrpac"' type=button class="emu GameName lazy"><img height=150 src=/img/Jr_pac_flyer.webp width=170>Jr Pac Man</button>
+            <button onclick='window.location.href="/games/emulatorjs"' type=button class="emu GameName lazy"><img height=150 src=/docs/Logo.png width=150>Upload Rom</button> 
+            <button onclick='window.location.href="/uv/geometry"' type=button class="plat GameName lazy"><img height=150 src=img/p7kWbWBFxQIrzolEqiV5uSvctLeyssZvBV7UBOX29wzZI52IdcSs4qCB_zsQJL1mt9A.webp width=150>Geometry Dash Lite</button>
+            <button onclick='window.location.href="/games/raft2"' type=button class="GameName lazy"><img height=150 src="/img/raft2.webp" width=150>Raft Wars 2</button>
+            <button onclick='window.location.href="/games/raft"' type=button class="GameName lazy"><img height=150 src="/img/raft.webp" width=150>Raft Wars</button> 
+            <button onclick='window.location.href="/games/fpa"' type=button class="GameName lazy plat"><img height=150 src="/img/uUknF-T1uzoMBLoR7CJo2R6GT_2RYs9qxXSvzCxsxZ-i7KD43k3RsdCyw7xXESIkOUg.webp" width=150>The Fancy Pants Adventures</button>
+            <button onclick='window.location.href="/games/1on1"' type=button class="GameName lazy sp"><img height=150 src="/img/1-on-1-soccer.webp" width=150>1on1 Soccer</button>
+            <button onclick='window.location.href="/games/cell"' type=button class="ot GameName lazy"><img height=150 src="/img/cell_to_singularity_app_icon.webp" width=150>Cell To Singularity</button>
+            <button onclick='window.location.href="/games/knifehit"' type=button class="ot GameName lazy ry"><img height=150 src="/img/knife-hit.webp " width=150>Knife Hit</button>
+            <button onclick='window.location.href="/games/mc"' type=button class="ot plat GameName lazy"><img height=150 src="/img/ml3khbi88bf.webp " width=150>Minecraft 0.30</button>
+            <button onclick='window.location.href="/games/breaklock"' type=button class="ot GameName lazy"><img height=150 src="/img/breaklock.webp " width=150>Breaklock</button>
+            <button onclick='window.location.href="/games/friendlyfire"' type=button class="ot GameName lazy plat"><img height=150 src="/img/friendly.webp " width=150>Friendly Fire</button>
+            <button onclick='window.location.href="/games/xx142-b2exe"' type=button class="ot GameName lazy plat"><img height=150 src="/img/xx.webp " width=150>xx142-b2exe</button>
+            <button onclick='window.location.href="/games/flappy"' type=button class="ry GameName lazy plat"><img height=150 src="/img/flappy.webp " width=150>Flappy Bird</button>
+            <button onclick='window.location.href="/uv/candy"' type=button class="ot GameName lazy"><img height=150 src="/img/crush.webp " width=150>Candy Crush Saga</button>
+            <button onclick='window.location.href="/uv/candy2"' type=button class="ot GameName lazy"><img height=150 src="/img/candy2.webp " width=150>Candy Clicker 2</button>
+            <button onclick='window.location.href="/games/freezeria"' type=button class="ot GameName lazy"><img height=150 src="/img/freezeria.webp " width=150>Papa's Freezeria</button>
+            <button onclick='window.location.href="/games/pizzeria"' type=button class="ot GameName lazy"><img height=150 src="/img/pizzeria.webp " width=150>Papa's Pizzeria</button>
+            <button onclick='window.location.href="/games/scooperia"' type=button class="ot GameName lazy"><img height=150 src="/img/scooperia.webp " width=150>Papa's Scooperia</button>
+            <button onclick='window.location.href="/games/wingeria"' type=button class="ot GameName lazy"><img height=150 src="/img/wingeria.webp " width=150>Papa's Wingeria</button>
+            <button onclick='window.location.href="/games/assessment"' type=button class="hor GameName lazy"><img height=150 src="/img/assessment.webp " width=150>Assessment Examination</button>
+            <button onclick='window.location.href="/games/run3"' type=button class="ot GameName lazy"><img height=150 src="/img/run3.webp " width=150>Run 3</button>
+            <button onclick='window.location.href="/uv/gacha"' type=button class="GameName lazy"><img height=150 src="/img/gacha.webp " width=150>Gacha Life</button>
+            <button onclick='window.location.href="/uv/club"' type=button class="GameName lazy"><img height=150 src="/img/club.webp " width=150>Gacha Club</button>
+            <button onclick='window.location.href="/games/baldi"' type=button class="GameName lazy"><img height=150 src="/img/baldi-basics_200x200_8a8.webp " width=150>Baldis Basics</button>
+            <button onclick='window.location.href="/games/justfall"' type=button class="mp GameName lazy"><img height=150 src="/img/justfall.webp " width=150>JustFall.LOL</button>
+            <button onclick='window.location.href="/uv/rocket"' type=button class="mp GameName lazy"><img height=150 src="/img/rocket.webp " width=150>Rocket League Sideswipe</button>
+            <button onclick='window.location.href="/games/emerald"' type=button class="emu GameName lazy"><img height=150 src="/img/emerald.webp " width=150>Pokemon Emerald</button>
+<button onclick='window.location.href="/uv/stumble"' type=button class="mp GameName lazy"><img height=150 src="/img/stumble.webp " width=150>Stumble Guys</button>
+            <button onclick='window.location.href="/games/fruitninja"' type=button class=" GameName lazy"><img height=150 src="/img/fruitninja.webp" width=150>Fruit Ninja</button>
+            <button onclick='window.location.href="/games/jetpack"' type=button class=" GameName lazy"><img height=150 src="/img/jetpack.webp" width=150>Jetpack Joyride</button>
+            <button onclick='window.location.href="/games/knight"' type=button class=" GameName lazy"><img height=150 src="/img/knight.webp" width=150>Apple Knight</button>
+            <button onclick='window.location.href="/games/mariovsluigi"' type=button class="mp GameName lazy"><img height=150 src="/img/mariovsluigi.webp" width=150>Mario VS Luigi</button>
+            <button onclick='window.location.href="/games/sketchbook"' type=button class="ot GameName lazy"><img height=150 src="/img/sketchbook.webp" width=150>Sketchbook 0.4</button>
+            <button onclick='window.location.href="/games/tekken3"' type=button class="emu GameName lazy"><img height=150 src="/img/tekken3.webp" width=150>Tekken 3</button>
+        <button onclick='window.location.href="/games/drift"' type=button class="sp GameName lazy"><img height=150 src="/img/drift.webp" width=150>Drift Hunters</button>
+           <button onclick='window.location.href="/games/pressing"' type=button class="ot GameName lazy"><img height=150 src="/img/pressure.webp" width=150>Pressing Under Pressure</button>
+            <button onclick='window.location.href="/games/portaboy"' type=button class="hor GameName lazy"><img height=150 src="/img/portaboy.webp" width=150>PortaBoy+</button>
+            <button onclick='window.location.href="/games/sword"' type=button class="ot plat GameName lazy"><img height=150 src="/img/sword.webp" width=150>Deepest Sword</button>
+  <button onclick='window.location.href="/games/tunnelrush"' type=button class="ry GameName lazy"><img height=150 src="/img/tunnelrush.webp" width=150>Tunnel Rush</button>
+            <button onclick='window.location.href="/games/georgeandtheprinter"' type=button class=" GameName lazy"><img height=150 src="/img/georgeandtheprinter.webp" width=150>George and the Printer</button>
+            <button onclick='window.location.href="/games/getaway"' type=button class="mp plat GameName lazy"><img height=150 src="/img/getaway-shootout.webp" width=150>Getaway Shootout</button>
+            <button onclick='window.location.href="/games/hotdoggeria"' type=button class="ot GameName lazy"><img height=150 src="/img/hotdoggeria.webp" width=150>Papa's Hot Doggeria</button>
+            <button onclick='window.location.href="/games/louie"' type=button class="plat GameName lazy"><img height=150 src="/img/louie.webp" width=150>Papa Louie: When Pizzas Attack!</button>
+            <button onclick='window.location.href="/games/soccer-random"' type=button class="sp mp GameName lazy"><img height=150 src="/img/soccer-random.webp" width=150>Soccer Random</button>
+              <button onclick='window.location.href="/games/boxing-physics2"' type=button class="sp mp GameName lazy"><img height=150 src="/img/physics.webp" width=150>Boxing Physics 2</button> 
+              <button onclick='window.location.href="/uv/hole"' type=button class=" mp GameName lazy"><img height=150 src="/img/hole.webp" width=150>Hole.io</button> 
+           <button onclick='window.location.href="/games/tacomia"' type=button class=" GameName lazy"><img height=150 src="/img/tacomia.webp" width=150>Papa's Taco Mia!</button> 
+           <button onclick='window.location.href="/games/unfair"' type=button class=" plat GameName lazy"><img height=150 src="/img/unfair.webp" width=150>Unfair Mario</button> 
+           <button onclick='window.location.href="/games/blockpost"' type=button class=" mp GameName lazy"><img height=150 src="/img/blockpost.webp" width=150>Blockpost</button> 
+           <button onclick='window.location.href="/games/google-snake"' type=button class="ot GameName lazy"><img height=150 src="/img/snake.webp" width=150>Google Snake</button> 
+           <button onclick='window.location.href="/games/FBWG"' type=button class=" plat mp GameName lazy"><img height=150 src="/img/fbwg.webp" width=150>Fireboy & Watergirl: Forest Temple</button> 
+        <button onclick='window.location.href="/games/chrome-dino"' type=button class="plat GameName lazy"><img height=150 src="/img/dino.webp" width=150>Chrome Dino</button> 
+        <button onclick='window.location.href="/games/wounded-summer"' type=button class=" GameName lazy"><img height=150 src="/img/wounded.webp" width=150>Wounded Summer</button> 
+        <button onclick='window.location.href="/fifa-world-cup"' type=button class="GameName lazy sp"><img height=150 src="/img/qatar.png" width=150>Qatar World Cup Streams</button> 
          
       </div>
     </div>
