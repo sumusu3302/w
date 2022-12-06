@@ -1,7 +1,7 @@
 function alertfnc() {
   var alertdiv = document.createElement('div')
-  alertdiv.setAttribute('class', 'toast-container p-3 bottom-0 end-0')
-  alertdiv.setAttribute('style', 'position: sticky;top: 0;')
+  alertdiv.setAttribute('class', 'toast-container p-3 bottom-0')
+  alertdiv.setAttribute('style', 'position: fixed;')
 alertdiv.innerHTML = `
 
 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
