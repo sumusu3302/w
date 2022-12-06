@@ -274,7 +274,9 @@
       background-color: grey;
 
     }
-
+.carousel-inner {
+  border-radius: 0.75rem;
+}
     .w {
       margin-left: auto;
       margin-right: auto;
@@ -282,7 +284,8 @@
     }
 
     .h-64 {
-      height: 16rem;
+      height: 600px;
+      width: 400px!important;
     }
 
     img.lazy {
@@ -537,18 +540,19 @@
           <div onclick='window.location.href="/games/slope"' class="w-full h-64 carousel-item active">
             <span
               style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-              <img src="/img/slope.jpg" class="d-block simg"
-                alt="...">
+              <img src="/img/slope.jpg" class="d-block simg" alt="...">
             </span>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Slope</h5>
+            <div class="bg-gradient-to-b from-transparent to-gray-900 absolute inset-0">
+              <div class="absolute bottom-0 p-4">
+                <h1 class="text-lg text-white md:text-xl 2xl:text-2xl font-extrabold tracking-tight">Slope</h1>
+                <h2 class="text-sm text-gray-300 md:text-md 2xl:text-lg font-normal tracking-tighter">Rob Kay</h2>
+              </div>
             </div>
           </div>
           <div onclick='window.location.href="/games/retro"' class="w-full h-64 carousel-item active">
             <span
               style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-              <img src="/img/retrobowl.jpg" class="d-block simg"
-                alt="...">
+              <img src="/img/retrobowl.jpg" class="d-block simg" alt="...">
             </span>
             <div class="carousel-caption d-none d-md-block">
               <h5>Retro Bowl</h5>
@@ -563,8 +567,7 @@
           <div onclick='window.location.href="/games/basketball"' class="w-full h-64 carousel-item active">
             <span
               style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-              <img src="/img/bbstars.png" class="d-block simg"
-                alt="...">
+              <img src="/img/bbstars.png" class="d-block simg" alt="...">
             </span>
             <div class="carousel-caption d-none d-md-block">
               <h5>Basketball Stars</h5>
