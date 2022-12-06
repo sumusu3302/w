@@ -20,9 +20,13 @@ bootstrapjs.setAttribute(
   "src",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 );
-const bootstrapcss = document.createElement("script");
+const bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
-  "src",
+  "rel",
+  "stylesheet"
+);
+bootstrapcss.setAttribute(
+  "href",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 );
 bootstrapjs.addEventListener('load', () => {
