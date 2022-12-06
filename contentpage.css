@@ -53,7 +53,19 @@ ins.adsbygoogle[data-ad-status=unfilled] {
     margin: 1rem auto;
     height: 20px
 }
-
+.bi {
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+}
+.me-2 {
+    margin-right: 0.5rem!important;
+}
+h1 {
+    margin-inline-start: 0px!important;
+    margin-inline-end: 0px!important;
+    font-weight: bold!important;
+}
 .bar,.desc {
     background-color: var(--ubg)
 }
