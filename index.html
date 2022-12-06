@@ -296,7 +296,7 @@ img.lazy {
      <a href="//patreon.com/emulatoros">Patreon</a>
   
      <div class="footer__visits"><i class="fas fa-eye"></i><span id="visit-count">0</span></div>
-     <div style="display: none;"class="w-full container-lg my-3 ">
+     <div style="display: block;"class="w-full container-lg my-3 ">
       <strong class="neon"style="font-size: 2.5em;font-weight: bold;" style=font-family:verdana>Popular</strong>
     <div id="carouselExampleCaptions" class="carousel slide w-full h-64" data-bs-ride="true">
       <div class="carousel-indicators">
@@ -309,7 +309,7 @@ img.lazy {
       <div class="carousel-inner w-full h-64">
         <div onclick='window.location.href="/games/slope"'class="w-full h-64 carousel-item active">
           <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="/img/ADC56A26-6B89-4D43-A560-ED8D8F3A9755.webp" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
+          <img src="/img/slope.jpg" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
             </span>
           <div class="carousel-caption d-none d-md-block">
             <h5>Slope</h5>
@@ -317,7 +317,7 @@ img.lazy {
         </div>
         <div onclick='window.location.href="/games/retro"'class="w-full h-64 carousel-item active">
           <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="/img/61FB33B3-A4B7-4D60-84E6-DC40A20F2E65.webp" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
+          <img src="/img/retrobowl.jpg" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
             </span>
           <div class="carousel-caption d-none d-md-block">
             <h5>Retro Bowl</h5>
@@ -331,7 +331,7 @@ img.lazy {
         </div>
         <div onclick='window.location.href="/games/basketball"'class="w-full h-64 carousel-item active">
           <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="/img/E2B36D13-1EDF-4380-9F3B-6A122F4FF062.webp" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
+          <img src="/img/bbstars.png" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
             </span>
           <div class="carousel-caption d-none d-md-block">
             <h5>Basketball Stars</h5>
@@ -339,7 +339,7 @@ img.lazy {
         </div>
         <div onclick='window.location.href="/games/tetris"'class="w-full h-64 carousel-item active">
           <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="/img/AECFC3DB-D4AA-4F1B-992C-FF9F96CFEBAB.webp" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
+          <img src="/img/tetris.jpg" class="d-block " style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"alt="...">
             </span>
           <div class="carousel-caption d-none d-md-block">
             <h5>Tetris</h5>
@@ -356,9 +356,10 @@ img.lazy {
     </div>
      </div>
      
-     <input type="text"class="form-index input input-bordered input-outline   max-w-xs" id="GameSearch" onkeyup="searchGames()" placeholder="Search">
-        
+    
       </div>
+      <input type="text"class="form-index input input-bordered input-outline   max-w-xs" id="GameSearch" onkeyup="searchGames()" placeholder="Search">
+        
     <div style=text-align:center>
         <div style="text-align:center">
             <button class="tabshow" show="all" style="width:100px;height: 50px;" type="button"
@@ -380,8 +381,9 @@ img.lazy {
             <button class="tabshow" show="ot" style="width:100px;height: 50px;" type="button"
                 onclick="hidebyID('ot')">Other</button>
         </div>
+        <a data-bs-toggle="modal" data-bs-target="#modal_frame" data-remote="/request.html">link</a>
         <div id='random results1'  class="results" style=text-align:center>
-          <a data-bs-toggle="modal" data-bs-target="#modal_frame" data-remote="/request.html">link</a>
+         
           
 
             <button onclick='window.location.href="/games/sm64"' type=button class="GameName emu"><img height=150 class="lazy" data-src="/img/mario64.webp" width=150>Super Mario 64</button> 
