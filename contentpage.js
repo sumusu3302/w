@@ -1,17 +1,5 @@
-if (localStorage.getItem("close-alert") === null) {
-const bootstrapjs = document.createElement("script");
-bootstrapjs.setAttribute(
-  "src",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-);
-const bootstrapcss = document.createElement("script");
-bootstrapcss.setAttribute(
-  "src",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-);
-
-document.body.append(bootstrapjs, bootstrapcss);
-var alertdiv = document.createElement('div')
+function alertfnc() {
+  var alertdiv = document.createElement('div')
 alertdiv.setAttribute('class', 'sticky-top')
 alertdiv.innerHTML = `
 
@@ -25,6 +13,23 @@ alertdiv.innerHTML = `
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>`
 document.body.append(alertdiv);
+}
+if (localStorage.getItem("close-alert") === null) {
+const bootstrapjs = document.createElement("script");
+bootstrapjs.setAttribute(
+  "src",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+);
+const bootstrapcss = document.createElement("script");
+bootstrapcss.setAttribute(
+  "src",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+);
+bootstrapjs.addEventListener('load', () => {
+  alertfnc()
+});
+document.body.append(bootstrapjs, bootstrapcss);
+
 }
 let url = window.location.pathname; //get path
 let host = window.location.host
