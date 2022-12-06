@@ -9,6 +9,8 @@ bootstrapcss.setAttribute(
   "src",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 );
+
+document.body.append(bootstrapjs, bootstrapcss);
 var alertdiv = document.createElement('div')
 alertdiv.setAttribute('class', 'sticky-top')
 alertdiv.innerHTML = `
@@ -22,7 +24,7 @@ alertdiv.innerHTML = `
   </div>
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>`
-
+document.body.append(alertdiv);
 }
 let url = window.location.pathname; //get path
 let host = window.location.host
@@ -40,25 +42,7 @@ if (url.indexOf("html") > -1) {
 }
 
 //if we find a match for the element, create the info
-try {
-  const found = gamesArr.find((element) => element.link == pageurl);
 
-  const content_title = document.querySelector("#content-title");
-  content_title.innerText = found.name;
-  const content_creator = document.querySelector("#content-creator");
-  content_creator.innerText = "by " + found.developer; //set the info
-  const contentdesc = document.querySelector("#content-desc");
-  contentdesc.innerText = found.desc;
-
-  const contentcontrols = document.querySelector("#content-controls");
-  for (let i = 0; i < found.controls.length; i++) {
-    let controlitem = document.createElement("li");
-    controlitem.innerText = found.controls[i];
-    contentcontrols.appendChild(controlitem);
-  }
-} catch (err) {
-  console.log(err);
-}
 
 const buildogDiv = (games) => {
   const $divwrap = document.createElement("div");
@@ -155,7 +139,6 @@ const iFullscreen = () => {
   reqFs(elem);
 };
 
-document.body.append(bootstrapjs, bootstrapcss);
 //Canvas fullscreen
 const cFullscreen = () => {
   const elem = document.getElementById("canvas");
