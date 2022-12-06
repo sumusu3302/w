@@ -1,7 +1,9 @@
 :root {
     --desc: #f1f1f1
 }
-
+body {
+    color: #fff!important;
+}
 ins.adsbygoogle[data-ad-status=unfilled] {
     display: none!important
 }
@@ -100,7 +102,9 @@ h1 {
     color: #fff;
     border: 0;
     box-shadow: inherit;
-    align-items: center
+    align-items: center;
+    font-size: 16px!important;
+    margin: 20px 10px!important;
 }
 
 .bar-left {
