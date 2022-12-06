@@ -1,6 +1,7 @@
 function alertfnc() {
   var alertdiv = document.createElement('div')
   alertdiv.setAttribute('class', 'toast-container p-3 bottom-0 end-0')
+  alertdiv.setAttribute('style', 'position: sticky;top: 0;')
 alertdiv.innerHTML = `
 
 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -9,7 +10,7 @@ alertdiv.innerHTML = `
   <strong class="me-auto">Full Screen</strong>
   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 </div>
-<div class="toast-body">
+<div style="color: black;"class="toast-body">
   Press F to go Full Screen
 </div>
 </div>`
