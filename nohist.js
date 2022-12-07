@@ -19,7 +19,7 @@ function check(elem) {
         link.style.display = "block";
     }
 }
-info = []
+const info = []
 const container = document.querySelector('.results');
 
 
@@ -32,6 +32,6 @@ for (let i = 0; i < buttons.length; i++) {
   data["onclick"] = button.getAttribute("onclick")
   data["text"] = button.innerText
 
-  info.append(data)
+  info.push(data)
 }
 console.log(info)
