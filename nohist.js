@@ -27,7 +27,7 @@ const buttons = container.getElementsByTagName('button');
 for (let i = 0; i < buttons.length; i++) {
     // Get the current button element
     const button = buttons[i];
-    const img = buttons.getElementsByTagName('img');
+    const img = button.getElementsByTagName('img');
   data = {}
 
   data["onclick"] = button.getAttribute("onclick")
