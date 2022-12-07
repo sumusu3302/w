@@ -137,7 +137,18 @@
 }
 
 /* Add styles to the form container */
+.modal-content {
+ 
+  background-color: #1F2029;
+  
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 
+}
 iframe {
     height: 100%;
     width: 100%;
