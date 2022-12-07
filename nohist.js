@@ -27,7 +27,7 @@ try {
     alert(error)
 }
 
-const buttons = container.getElementsByTagName('button');
+const buttons1 = container.getElementsByTagName('button');
 buttons.forEach(button => {
   data = {}
 
