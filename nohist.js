@@ -20,8 +20,14 @@ function check(elem) {
     }
 }
 info = []
-const container = document.getElementsByClassName('results');
-const buttons = container.querySelectorAll("button")
+const container = document.querySelector('#random');
+try {
+    const buttons = container.querySelectorAll('button'); 
+} catch (error) {
+    alert(error)
+}
+
+const buttons = container.getElementsByTagName('button');
 buttons.forEach(button => {
   data = {}
 
