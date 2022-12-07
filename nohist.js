@@ -4,3 +4,10 @@ myWindow.document.write("<iframe onload=\"\" id='iframe' width=\"100%\" height=\
 myWindow.document.write("<style>body { margin:0;}</style>")
 myWindow.document.write("<script>function home(){document.getElementById('iframe').src = \""+url+"\"}</script>")
 myWindow.document.close();myWindow.stop();window.location.replace('https://google.com');}
+function check(elem); {
+    if (elem == 'emulator') {
+    console.log('emulator') 
+    } else {
+console.log(elem)
+    }
+}

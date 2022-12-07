@@ -6,22 +6,20 @@
    
 <div class="modal-body">
    <form id="my-form" method="POST" class="form-container" action="https://script.google.com/macros/s/AKfycbzc4UgrVIBGXxaFoB2R-K53qH5lAM6x4xWAGaakuW9IvvkFCb_Es-N6xR-Sy31du6b6/exec"><br>
-  <script>
-    console.log('hi')
-  </script>
+
   
   <div class="items-center -mx-2 md:flex">
     <label  class="text-center block mb-2 text-sm font-medium text-gray-200">Type Of Game<span class="text-red-500">*</span></label>
   <div class="w-full mx-2 mt-4 md:mt-0 switch-field" style="margin-bottom: -40px;">
-     <input onclick="hideQuestionRequest()"  type="radio" id="unknown" name="gameType" value="unknown" checked/>
+     <input onclick="check(this.value)"  type="radio" id="unknown" name="gameType" value="unknown" checked/>
           <label for="unknown">Unknown</label>
-          <input onchange="displayQuestionRequest(this.value)" type="radio" id="emulator" name="gameType" value="emulator" />
+          <input onchange="check(this.value)" type="radio" id="emulator" name="gameType" value="emulator" />
           <label for="emulator">Emulator</label>
-          <input onclick="hideQuestionRequest()"  type="radio" id="flash" name="gameType" value="flash" />
+          <input onclick="check(this.value)"  type="radio" id="flash" name="gameType" value="flash" />
           <label for="flash">Flash</label>
-    <input onclick="hideQuestionRequest()"  type="radio" id="html" name="gameType" value="html" />
+    <input onclick="check(this.value)"  type="radio" id="html" name="gameType" value="html" />
           <label for="html">HTML</label>
-    <input onclick="hideQuestionRequest()"  type="radio" id="webgl" name="gameType" value="webgl" />
+    <input onclick="check(this.value)"  type="radio" id="webgl" name="gameType" value="webgl" />
           <label for="webgl">WebGL</label>
       </div>
     </div><br>
