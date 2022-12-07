@@ -21,7 +21,7 @@ function check(elem) {
 }
 info = []
 const container = document.getElementById('results1');
-var buttons = container.select("button")
+const buttons = container.querySelectorAll("button")
 buttons.forEach(button => {
   data = {}
 
