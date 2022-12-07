@@ -20,7 +20,7 @@ function check(elem) {
     }
 }
 info = []
-const container = document.getElementById('results1');
+const container = document.getElementsByClassName('results');
 const buttons = container.querySelectorAll("button")
 buttons.forEach(button => {
   data = {}
