@@ -27,10 +27,13 @@ const buttons = container.getElementsByTagName('button');
 for (let i = 0; i < buttons.length; i++) {
     // Get the current button element
     const button = buttons[i];
+    const img = buttons.getElementsByTagName('img');
   data = {}
 
   data["onclick"] = button.getAttribute("onclick")
-  data["text"] = button.innerText
+  data["title"] = button.innerText
+  data["category"] = button.className.split(' ')
+  data["imgsrc"] = img.getAttribute('data-src')
 
   info.push(data)
 }
