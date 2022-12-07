@@ -21,18 +21,17 @@ function check(elem) {
 }
 info = []
 const container = document.querySelector('.results');
-try {
-    const buttons = container.querySelectorAll('button'); 
-} catch (error) {
-    alert(error)
-}
 
-const buttons1 = container.getElementsByTagName('button');
-buttons.forEach(button => {
+
+const buttons = container.getElementsByTagName('button');
+for (let i = 0; i < buttons.length; i++) {
+    // Get the current button element
+    const button = buttons[i];
   data = {}
 
   data["onclick"] = button.get("onclick")
   data["text"] = button.text
 
   info.append(data)
-});
+}
+console.log(info)
