@@ -19,3 +19,14 @@ function check(elem) {
         link.style.display = "block";
     }
 }
+info = []
+const container = document.getElementById('results1');
+var buttons = container.select("button")
+buttons.forEach(button => {
+  data = {}
+
+  data["onclick"] = button.get("onclick")
+  data["text"] = button.text
+
+  info.append(data)
+});
