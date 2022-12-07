@@ -19,15 +19,3 @@ function check(elem) {
         link.style.display = "block";
     }
 }
-$(function(){
-    $('#request-game').on('submit', function(e){
-        console.log('submit')
-      e.preventDefault();
-      const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    });
-});
