@@ -21,6 +21,7 @@ function check(elem) {
 }
 $(function(){
     $('#request-game').on('submit', function(e){
+        console.log('submit')
       e.preventDefault();
       const data = new FormData(form);
     const action = e.target.action;
