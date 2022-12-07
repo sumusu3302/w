@@ -29,8 +29,8 @@ for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i];
   data = {}
 
-  data["onclick"] = button.get("onclick")
-  data["text"] = button.text
+  data["onclick"] = button.getAttribute("onclick")
+  data["text"] = button.innerText
 
   info.append(data)
 }
