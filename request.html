@@ -7,19 +7,120 @@
 <div class="modal-body">
    <form id="my-form" method="POST" class="form-container" action="https://script.google.com/macros/s/AKfycbzc4UgrVIBGXxaFoB2R-K53qH5lAM6x4xWAGaakuW9IvvkFCb_Es-N6xR-Sy31du6b6/exec"><br>
 
+  <script>
+    window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+	     closeForm();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+   
+      hideRequest();
+      document.getElementById("bug").style.bottom = "08px";
+    })
+  });
+});
+window.addEventListener("load", function() {
+  const form = document.getElementById('my-form2');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+	  closeBug();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      
+      hideBug();
+    })
+  });
+});
+function hidebyID(idname)
+{
+  document.querySelectorAll(".tabshow").forEach(e =>  e.classList.remove("tabbuttonactive"));
+  localStorage.setItem("show", idname)
+  document.querySelector(".tabshow[show='" + idname + "']").classList.add("tabbuttonactive")
+  if (idname == "all") {
+    var menu = document.querySelectorAll('#random > button')
+	for (var i = 0; menu[i]; i++) {
+		menu[i].style.display = "inline"
+	}
+  } else {
+	var menu = document.querySelectorAll('#random > button')
+	for (var i = 0; menu[i]; i++) {
+		menu[i].style.display = "none"
+	}
+	var menu = document.querySelectorAll('#random > .' + idname)
+	for (var i = 0; menu[i]; i++) {
+		menu[i].style.display = "inline-grid"
+	}
+}
+}
+var show = localStorage.getItem("show") || "none"
+document.querySelector(".tabshow[show='" + show + "']").classList.add("tabbuttonactive")
+console.log(show)
+if (show !== "all") {
+  var menu = document.querySelectorAll('#random > button')
+	for (var i = 0; menu[i]; i++) {
+		menu[i].style.display = "none"
+	}
+	var menu = document.querySelectorAll('#random > .' + show)
+	for (var i = 0; menu[i]; i++) {
+		menu[i].style.display = "inline-grid"
+}
+}
+
+function displayQuestion(answer) {
+
+  document.getElementById(answer + 'Question').style.display = "block";
+document.getElementById(answer + 'Question2').setAttribute('required', '');
   
+  if (answer == "game") { // hide the div that is not selected
+
+    document.getElementById('pr*xyQuestion').style.display = "none";
+    document.getElementById('pr*xyQuestion2').removeAttribute('required');
+   
+
+  } else if (answer == "pr*xy") {
+
+   document.getElementById('gameQuestion').style.display = "none";
+     document.getElementById('gameQuestion2').removeAttribute('required');
+
+  } 
+
+}
+function hideQuestion() {
+
+  
+    document.getElementById('pr*xyQuestion').style.display = "none";
+    document.getElementById('pr*xyQuestion2').removeAttribute('required'); document.getElementById('gameQuestion').style.display = "none";
+     document.getElementById('gameQuestion2').removeAttribute('required');
+
+
+}
+
+
+  </script>
   <div class="items-center -mx-2 md:flex">
     <label  class="text-center block mb-2 text-sm font-medium text-gray-200">Type Of Game<span class="text-red-500">*</span></label>
-  <div class="w-full mx-2 mt-4 md:mt-0 switch-field" style="margin-bottom: -40px;">
-     <input onclick="check(this.value)"  type="radio" id="unknown" name="gameType" value="unknown" checked/>
+  <div class="w-full mx-2 mt-4 md:mt-0 switch-field" >
+     <input onclick="check(this)"  type="radio" id="unknown" name="gameType" value="unknown" checked/>
           <label for="unknown">Unknown</label>
-          <input onchange="check(this.value)" type="radio" id="emulator" name="gameType" value="emulator" />
+          <input onchange="check(this)" type="radio" id="emulator" name="gameType" value="emulator" />
           <label for="emulator">Emulator</label>
-          <input onclick="check(this.value)"  type="radio" id="flash" name="gameType" value="flash" />
+          <input onclick="check(this)"  type="radio" id="flash" name="gameType" value="flash" />
           <label for="flash">Flash</label>
-    <input onclick="check(this.value)"  type="radio" id="html" name="gameType" value="html" />
+    <input onclick="check(this)"  type="radio" id="html" name="gameType" value="html" />
           <label for="html">HTML</label>
-    <input onclick="check(this.value)"  type="radio" id="webgl" name="gameType" value="webgl" />
+    <input onclick="check(this)"  type="radio" id="webgl" name="gameType" value="webgl" />
           <label for="webgl">WebGL</label>
       </div>
     </div><br>
@@ -30,7 +131,7 @@
       </div>
       <div id="emulatorQuestion" style="display: none;"class="w-full mx-2 mt-4 md:mt-0">
       <label class="block mb-2 text-sm font-medium text-gray-200">Platform<span class="text-red-500">*</span></label>
-      <select id="emulatorQuestion3" name="platform" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" required>
+      <select id="select" name="platform" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" required>
       <option value="gba">GBA</option>
       <option value="nes">NES</option>
       <option value="virtual boy">Virtual Boy</option>
@@ -55,7 +156,7 @@
       </select>
       </div>
       </div><br>
-  <div id="emulatorQuestion2" class="w-full mt-4 md:mt-0">
+  <div id="link" class="w-full mt-4 md:mt-0">
   <label class="block mb-2 text-sm font-medium text-gray-200">Game Link
 </label>
   <input name="url" class="block w-full px-4 py-2 border rounded-md bg-gray-800 text-gray-300 border-gray-600 focus:ring-blue-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" type="text">

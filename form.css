@@ -137,22 +137,7 @@
 }
 
 /* Add styles to the form container */
-.modal-content {
-  max-width: 400px;
-  padding: 10px;
-  background-color: #1F2029;
-  height: auto;
-  border: none;
-  border-radius: 25px;
-  display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-  transition: all 0.3s ease 0s;
 
-}
 iframe {
     height: 100%;
     width: 100%;

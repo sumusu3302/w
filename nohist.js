@@ -5,9 +5,17 @@ myWindow.document.write("<style>body { margin:0;}</style>")
 myWindow.document.write("<script>function home(){document.getElementById('iframe').src = \""+url+"\"}</script>")
 myWindow.document.close();myWindow.stop();window.location.replace('https://google.com');}
 function check(elem) {
-    if (elem == 'emulator') {
+    var platformdiv =  document.getElementById('emulatorQuestion') 
+    var select =  document.getElementById('select') 
+    var link =  document.getElementById('link') 
+    if (elem.value == 'emulator') {
+        platformdiv.style.display = "block";
+        select.setAttribute('required', '');
+        link.style.display = "none";
     console.log('emulator') 
     } else {
-console.log(elem)
+        platformdiv.style.display = "none";
+        select.removeAttribute('required', '');
+        link.style.display = "block";
     }
 }
