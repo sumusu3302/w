@@ -20,7 +20,7 @@ function check(elem) {
     }
 }
 info = []
-const container = document.querySelector('#random');
+const container = document.querySelector('.results');
 try {
     const buttons = container.querySelectorAll('button'); 
 } catch (error) {
