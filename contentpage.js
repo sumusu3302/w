@@ -18,7 +18,7 @@ document.body.prepend(alertdiv);
 if (document.getElementsByClassName('fa-expand') !== null) {
   console.log('not button')
   document.onkeyup = function(e) {
-    if ( e.key == 'f' && e.ctrlKey && e.shiftKey) {
+    if ( e.key == 'F' && e.ctrlKey && e.shiftKey) {
      console.log('full screen')
      iFullscreen();
     }
