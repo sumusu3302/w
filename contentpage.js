@@ -3,7 +3,6 @@ function alertfnc() {
   alertdiv.setAttribute('class', 'toast-container p-3 bottom-0')
   alertdiv.setAttribute('style', 'position: fixed;')
 alertdiv.innerHTML = `
-
 <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
 <div class="toast-header">
   
@@ -11,7 +10,7 @@ alertdiv.innerHTML = `
   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 </div>
 <div style="color: black;"class="toast-body">
-  Press F to go Full Screen
+  Press Ctrl-Shift-F to go Full Screen
 </div>
 </div>`
 document.body.prepend(alertdiv);
@@ -19,10 +18,9 @@ document.body.prepend(alertdiv);
 if (document.getElementsByClassName('fa-expand') !== null) {
   console.log('not button')
   document.onkeyup = function(e) {
-    if ( e.key == 'f') {
+    if ( e.key == 'F' && e.ctrlKey && e.shiftKey) {
      console.log('full screen')
      iFullscreen();
-      
     }
  }
 const bootstrapjs = document.createElement("script");
