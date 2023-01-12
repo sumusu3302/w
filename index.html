@@ -1,26 +1,42 @@
 <script>
-  function run(){
-var password = prompt("Password Please");
-//Change to your own Password
-if(password != 'password1234'){
-window.location.replace('/bad');
-}else{
-  var url= "https://makeawish-kid.github.io/good"
-var myWindow=window.open("","_blank");
-myWindow.document.write('<title>Google</title><link rel=\"icon\" type=\"image/x-icon\" href=\"https://www.google.com/favicon.ico\">')
-myWindow.document.write("<iframe onload=\"\" id='iframe' width=\"100%\" height=\"100%\" style=\"border:none;\"></iframe>");
-myWindow.document.write(`<script>setTimeout(function() {document.getElementById('iframe').src = url}, 500)</script>`)
-myWindow.document.write('<style>body { margin:0;}</style>')
-myWindow.document.write("<script>function home(){document.getElementById('iframe').src = url}</script>")
-myWindow.document.close();
-myWindow.stop();
-window.location.replace('https://google.com');
+  function doAuthentication(pass) { //do authentication}
+	if (pass != 'password1234') {
+		window.location.replace('/bad');
+	} else {
+		var url = "https://makeawish-kid.github.io/good"
+		var myWindow = window.open("", "_blank");
+		myWindow.document.write('<title>Google</title><link rel=\"icon\" type=\"image/x-icon\" href=\"https://www.google.com/favicon.ico\">')
+		myWindow.document.write("<iframe onload=\"\" id='iframe' width=\"100%\" height=\"100%\" style=\"border:none;\"></iframe>");
+		myWindow.document.write(`<script>setTimeout(function() {document.getElementById('iframe').src = url}, 500)</script>`)
+		myWindow.document.write('<style>body { margin:0;}</style>')
+		myWindow.document.write("<script>function home(){document.getElementById('iframe').src = url}</script>")
+		myWindow.document.close();
+		myWindow.stop();
+		window.location.replace('https://google.com');
+	}
 }
+
+function run() {
+	var theButton = document.getElementById("prompt");
+	theButton.onclick = function() {
+		var thePrompt = window.open("", "", "width=500");
+		var theHTML = "";
+		theHTML += "<p> Please authenticate yourself.</p>";
+		theHTML += "<br/>";
+		theHTML += "Password: <input type='text' id='thePass' placeholder='Enter Password...'/>";
+		theHTML += "<br />";
+		theHTML += "<input type='button' value='OK' id='authOK'/>";
+		thePrompt.document.body.innerHTML = theHTML;
+		var thePass = thePrompt.document.getElementById("thePass").value;
+		thePrompt.document.getElementById("authOK").onclick = function() {
+			doAuthentication(thePass);
+		}
+	}
+
+
 }
 run();
 </script>
 <body>
-  <script>
-    let textNode = document.createTextNode("Incorrect Password. Please Reload."); document.body.appendChild(textNode);
-  </script>
+  
 </body>
